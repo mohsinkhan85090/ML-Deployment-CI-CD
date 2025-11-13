@@ -14,7 +14,9 @@ def predict():
     sqft = data['sqft']
     rooms = data['rooms']
     prediction = model.predict([[sqft, rooms]])
+    prediction = model.predict([data['features']])
     return jsonify({'predicted_price': prediction[0]})
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

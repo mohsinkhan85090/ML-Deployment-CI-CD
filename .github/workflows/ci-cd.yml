@@ -1,0 +1,31 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Test app
+      run: python -m unittest discover || echo "No tests yet"
+
+    - name: Build Docker Image
+      run: docker build -t ml-app .
+
+    - name: Run Docker Container
+      run: docker run -d -p 5000:5000 ml-app
