@@ -1,10 +1,12 @@
 # ML Model Deployment with Docker, Kubernetes & CI/CD
+The core purpose of this project is to bridge the gap between developing a Machine Learning model (which is done on a laptop) and getting that model used by real customers (which requires a stable, scalable production environment).
+
+The project demonstrates two crucial concepts: Production Readiness and Automation (MLOps).
 
 ## Project Overview
+I built this project to demonstrate an end-to-end MLOps pipeline. The purpose was to show that I can take a trained ML model, containerize it with Docker for consistency, deploy it onto a scalable and resilient infrastructure using Kubernetes, and automate the entire testing and deployment process using CI/CD. This project proves my understanding of the best practices required to transition ML research into reliable production services.
 This project demonstrates **end-to-end deployment of a Machine Learning model** using **Docker**, **Kubernetes**, and **CI/CD pipelines** via **GitHub Actions**.  
 The ML model is containerized, deployed on a Kubernetes cluster, and automatically updated whenever code changes are pushed.  
-
-This project is ideal for showcasing full-stack DevOps + ML skills in real-world scenarios.
 ---
 ## Project Architecture  
 ![Project Architecture](https://raw.githubusercontent.com/mohsinkhan85090/ML-Model-Deployment-with-Docker-Kubernetes-CI-CD/main/98.png)
