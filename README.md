@@ -5,6 +5,9 @@ This project demonstrates **end-to-end deployment of a Machine Learning model** 
 The ML model is containerized, deployed on a Kubernetes cluster, and automatically updated whenever code changes are pushed.  
 
 This project is ideal for showcasing full-stack DevOps + ML skills in real-world scenarios.
+---
+## Project Architecture  
+![Project Architecture](https://raw.githubusercontent.com/mohsinkhan85090/ML-Model-Deployment-with-Docker-Kubernetes-CI-CD/main/98.png)
 
 ---
 
