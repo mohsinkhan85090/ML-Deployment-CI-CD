@@ -1,4 +1,4 @@
-# ML Model Deployment with Docker, Kubernetes & CI/CD
+## ML Model Deployment with Docker, Kubernetes & CI/CD
 The core purpose of this project is to bridge the gap between developing a Machine Learning model (which is done on a laptop) and getting that model used by real customers (which requires a stable, scalable production environment).
 
 The project demonstrates two crucial concepts: Production Readiness and Automation (MLOps).
